@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+/*cor do site*/
+
+body {
+    background-color: #ffefc4;
+}
+
+
+/*topo*/
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fee4d8;
+}
+
+nav {
+    width: 1280px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 85px;
+    height: 90px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.login {
+    width: 120px;
+    height: 120px;
+    margin-right: 780px;
+}
+
+.login img {
+    width: 100%;
+}
+
+menu {
+    display: flex;
+    gap: 20px;
+}
+
+menu li {
+    list-style-type: none;
+}
+
+menu li a {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Jockey One";
+}
+
+menu li a:link,
+menu li a:visited {
+    color: #000000;
+}
+
+menu li a:hover {
+    color: #9BCDD8;
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+
+/*slide*/
+
+.slider-content {
+    height: 950px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navegacao {
+    position: absolute;
+    top: 1000px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.barra {
+    width: 75px;
+    height: 20px;
+    border: 2px solid white;
+    margin: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.barra:hover {
+    transition: .4s;
+    background-color: rgb(114, 6, 6);
+}
+
+.slides input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slide1:checked~.slide1 {
+    margin-left: 0;
+}
+
+#slide2:checked~.slide1 {
+    margin-left: -20%;
+}
+
+#slide3:checked~.slide1 {
+    margin-left: -40%;
+}
+
+#slide4:checked~.slide1 {
+    margin-left: -60%;
+}
+
+#slide5:checked~.slide1 {
+    margin-left: -80%;
+}
+
+
+/*quadrados*/
+
+.square {
+    width: 300px;
+    height: 400px;
+    margin-right: 80px;
+    margin: 50px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.tres {
+    display: flex;
+    flex-direction: row;
+}
+
+.square img {
+    width: 80%;
+    height: 70%;
+    position: relative;
+    margin-top: 30px;
+    margin: 30px;
+}
+
+.square p {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin: 67px;
+    margin-top: -20px;
+}
+
+
+/*cor do botao*/
+
+.color {
+    min-width: 80px;
+    min-height: 30px;
+    padding: 5px 10px;
+    background-color: #14df2b;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px;
+    /* Distância do botão até o fundo do quadrado */
+    left: 50%;
+    /* Alinha o botão horizontalmente */
+    transform: translateX(-50%);
+}
+
+
+/*botão*/
+
+.color:hover {
+    background-color: #492B9F;
+    /* Cor do botão ao passar o mouse */
+}
+
+.color-btn {
+    min-width: 80px;
+    min-height: 30px;
+    padding: 5px 10px;
+    background-color: #FF9F9F;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px;
+    /* Distância do botão até o fundo do quadrado */
+    left: 50%;
+    /* Alinha o botão horizontalmente */
+    transform: translateX(-50%);
+}
+
+.color-btn:hover {
+    background-color: #88238A;
+    /* Cor do botão ao passar o mouse */
+}
+
+.color-bt {
+    min-width: 80px;
+    min-height: 30px;
+    padding: 5px 10px;
+    background-color: #5469d1;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px;
+    /* Distância do botão até o fundo do quadrado */
+    left: 50%;
+    /* Alinha o botão horizontalmente */
+    transform: translateX(-50%);
+}
+
+.color-bt:hover {
+    background-color: #7be948;
+    /* Cor do botão ao passar o mouse */
+}
+
+
+/*cor dos quadrados*/
+
+.red {
+    background-color: #DC8DE2;
+}
+
+.blue {
+    background-color: #8DE2A5;
+}
+
+.green {
+    background-color: #E465B1;
+}
+
+
+/*Pag de produtos*/
+
+.container {
+    width: 100%;
+    padding: 64px 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.left {
+    width: 608px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.right {
+    width: 608px;
+    display: flex;
+    align-items: center;
+}
+
+.left .prod {
+    background-color: #F3FF64;
+}
+
+.left .prod:nth-child(2n) {
+    background-color: #BAF1C9;
+}
+
+.right .prod {
+    background-color: #E2BDEB;
+}
+
+.prod {
+    width: 100%;
+    height: 400px;
+    padding: 32px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod .foto {
+    width: 240px;
+    height: 336px;
+    border-radius: 8px;
+    background-color: #ececec;
+    overflow: hidden;
+}
+
+.prod .foto img {
+    width: 100%;
+}
+
+.prod .texto {
+    width: 240px;
+    height: 336px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    color: #3e4edf;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+a.btn {
+    width: 100%;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #DD67D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jockey One";
+    font-size: 28px;
+    color: black;
+}
+
+a.btn:hover {
+    background-color: rgb(156, 23, 233);
+}
+
+
+/* Rodapé*/
+
+footer {
+    width: 100%;
+}
+
+footer .barra-img {
+    width: 100%;
+    height: 87px;
+    background-image: url(../img/img-footer.webp);
+}
+
+footer .conteudo {
+    width: 100%;
+    padding-bottom: 48px;
+    background-color: #ff9f9f;
+    display: flex;
+    justify-content: center;
+}
+
+footer .conteudo .esquerdo,
+footer .conteudo .direito {
+    width: 630px;
+}
+
+footer .conteudo .esquerdo {
+    text-align: right;
+}
+
+footer .conteudo .direito ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+footer .conteudo .direito ul li {
+    list-style-type: none;
+    width: 32px;
+    height: 32px;
+}
+
+footer .conteudo .direito ul li img {
+    width: 100%;
+}

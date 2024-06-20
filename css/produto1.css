@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('style.css');
+main {
+    display: flex;
+    width: 1280px;
+    margin: 32px auto;
+    gap: 32px;
+    justify-content: center;
+}
+
+.bolosLeft,
+.bolosRight {
+    width: 400px;
+}
+
+.bolosRight .grande {
+    width: 100%;
+}
+
+.bolosRight .grande img {
+    width: 100%;
+}
+
+.bolosRight .miniaturas {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.mini {
+    width: 120px;
+}
+
+.mini img {
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-family: 'Jockey One';
+    text-align-last: left;
+}
+
+ul {
+    font-family: sans-serif;
+    margin: 16px 0;
+}
+
+li {
+    list-style: inside;
+}

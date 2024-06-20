@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('style.css') * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+/*cor do site*/
+
+body {
+    background-color: #ffefc4;
+}
+
+
+/*topo*/
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fee4d8;
+}
+
+nav {
+    width: 1280px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 85px;
+    height: 90px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.login {
+    width: 120px;
+    height: 120px;
+    margin-right: 750px;
+}
+
+.login img {
+    width: 100%;
+}
+
+menu {
+    display: flex;
+    gap: 20px;
+}
+
+menu li {
+    list-style-type: none;
+}
+
+menu li a {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Jockey One";
+}
+
+menu li a:link,
+menu li a:visited {
+    color: #000000;
+}
+
+menu li a:hover {
+    color: #4b7c86;
+}
+
+.contato img {
+    position: absolute;
+    width: 135px;
+    top: 466px;
+    left: 430px;
+}
+
+
+/*quadrado*/
+
+p3 {
+    font-size: 30px;
+    color: #16625D;
+    font-family: "Jockey one";
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    margin: 15px;
+}
+
+.squarecont {
+    margin: 220px;
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+    height: 300px;
+    background-color: #F5A68D;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-right: 40px;
+    right: 20;
+    transform: translateY(-50%);
+}
+
+p4 {
+    font-size: 25px;
+    margin: 5px;
+    color: #000000;
+    font-family: "Jockey one";
+    font-weight: bold;
+}
+
+p1 {
+    font-size: 20px;
+    margin: 5px;
+}
+
+h {
+    font-size: 25px;
+    margin: 5px;
+    color: #000000;
+    font-family: "Jockey one";
+    font-weight: bold;
+}
+
+p2 {
+    font-size: 20px;
+    margin: 5px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 5px;
+    color: #000000;
+    font-family: "Jockey one";
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 35px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Jockey one";
+    font-weight: bold;
+}
+
+
+/*feedback*/
+
+.p5 {
+    font-size: 25px;
+    margin: 10px;
+    color: #000000;
+    font-family: "Jockey one";
+    font-weight: bold;
+}
+
+form {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* position: relative; */
+    padding: 8px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px;
+    height: 40px;
+    border: none;
+    background-color: #DD67D8;
+    width: 100px;
+    position: relative;
+    top: -450px;
+    left: 800px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    height: 40px;
+    border: none;
+    background-color: #92D499;
+    width: 300px;
+    position: relative;
+    top: -450px;
+    left: 750px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px #3bb43b;
+}
+
+textarea {
+    width: 300px;
+    height: 120px;
+    resize: none;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .barra-img {
+    width: 100%;
+    height: 87px;
+    background-image: url(../img/img-footer.webp);
+}
+
+footer .conteudo {
+    width: 100%;
+    padding-bottom: 28px;
+    background-color: #ff9f9f;
+    display: flex;
+    justify-content: center;
+}
+
+footer .conteudo .esquerdo,
+footer .conteudo .direito {
+    width: 500px;
+}
+
+footer .conteudo .esquerdo {
+    text-align: right;
+}
+
+footer .conteudo .direito ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+footer .conteudo .direito ul li {
+    list-style-type: none;
+    width: 42px;
+    height: 42px;
+}
+
+footer .conteudo .direito ul li img {
+    width: 100%;
+}
